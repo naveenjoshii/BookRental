@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/advent_pro_semibold</item>
+        <item>@font/alex_brush</item>
+        <item>@font/allerta_stencil</item>
+        <item>@font/crafty_girls</item>
+        <item>@font/dancing_script_bold</item>
+        <item>@font/lily_script_one</item>
+    </array>
+</resources>

@@ -1,0 +1,59 @@
+{
+  "project_info": {
+    "project_number": "580288696523",
+    "firebase_url": "https://bookrental-77a54.firebaseio.com",
+    "project_id": "bookrental-77a54",
+    "storage_bucket": "bookrental-77a54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580288696523:android:7fc79d0b1815c525",
+        "android_client_info": {
+          "package_name": "com.example.hp.bookrental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580288696523-qbkfaed7racg37uihrkc19t2onug8tua.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hp.bookrental",
+            "certificate_hash": "5b9e7f45d765fa2deafca71137e9fb5ec76c9c3c"
+          }
+        },
+        {
+          "client_id": "580288696523-chl1ulds1rso1nubim68ca89du146o1t.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "580288696523-chl1ulds1rso1nubim68ca89du146o1t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv7Pm255p8603kxBiybTgVnKYmNkXTp_g"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580288696523-chl1ulds1rso1nubim68ca89du146o1t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
