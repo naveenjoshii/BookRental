@@ -214,7 +214,7 @@
 
     <Button
         android:id="@+id/Register"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/et2"
         android:layout_centerHorizontal="true"

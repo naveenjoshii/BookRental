@@ -89,6 +89,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        android:textSize="15dp"
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="#ffff"/>
@@ -98,12 +99,14 @@
         android:layout_marginTop="5sp"
         android:text="-----------------or-----------------"
         android:textColor="#ffff"
+        android:textSize="15dp"
         android:gravity="center"/>
     <TextView
         android:id="@+id/register"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="New user? SignUp"
+        android:textSize="15dp"
         android:layout_marginTop="5sp"
         android:layout_gravity="center"
         android:gravity="center"
