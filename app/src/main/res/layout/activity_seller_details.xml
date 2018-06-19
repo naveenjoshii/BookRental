@@ -43,9 +43,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
-        android:clickable="true"
         android:layout_marginEnd="3dp"
+        android:clickable="true"
         app:backgroundTint="@color/gold"
+        app:fabSize="mini"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
 
@@ -58,9 +59,10 @@
         android:layout_marginTop="20dp"
         android:textSize="20dp"
         android:layout_height="wrap_content" />
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <TextView
@@ -74,12 +76,25 @@
             android:id="@+id/fab3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginEnd="3dp"
+            android:layout_alignEnd="@+id/seller_phone"
+            android:layout_alignTop="@+id/seller_phone"
+            android:layout_marginEnd="8dp"
             android:clickable="true"
             app:backgroundTint="@color/gold"
+            app:fabSize="mini"
             app:srcCompat="@android:drawable/stat_sys_phone_call" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/seller_phone"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/fab3"
+            android:clickable="true"
+            app:backgroundTint="@color/gold"
+            app:fabSize="mini"
+            app:srcCompat="@android:drawable/stat_notify_chat" />
 
 
     </RelativeLayout>
