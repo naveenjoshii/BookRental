@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hp.bookrental.profile">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="YOUR PROFILE"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:text="UserName:-"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/etpname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Password :-"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <EditText
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/etPswd"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Phone Number :-"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+    <EditText
+    android:id="@+id/etpPone"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:layout_marginTop="20dp"
+    android:textColor="#000000"
+    android:textSize="20dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:text="Email :-"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/etpmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="center"
+            android:text="SAVE"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/mybutton"
+            android:fontFamily="@font/allerta_stencil"
+            android:gravity="center"
+            android:text=" CANCEL"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
