@@ -2,6 +2,7 @@ package com.example.hp.bookrental;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
@@ -19,7 +21,7 @@ import java.util.List;
  * Created by HP on 16-06-2018.
  */
 
-public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHolder> {
+public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.ViewHolder> {
     private Context context;
     private List<BooksDetails> mBooks;
 
@@ -29,13 +31,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
     }
 
     @Override
-    public BookViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v = LayoutInflater.from(context).inflate(R.layout.books_item,parent,false);
-        return new BookViewHolder(v);
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+              View  v = LayoutInflater.from(context).inflate(R.layout.books_item,parent,false);
+        return new ViewHolder(v);
     }
-
     @Override
-    public void onBindViewHolder(BookViewHolder holder, int position){
+    public void onBindViewHolder(ViewHolder holder, int position){
         BooksDetails booksDetails = mBooks.get(position);
         holder.bookViewName.setText(booksDetails.getmBookName());
         Picasso.with(context)
@@ -46,9 +47,9 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
         //holder.bookAuthor.setText(booksDetails.getmAuthorName());
         //holder.bookEdition.setText(booksDetails.getmEditionNo());
         //holder.bookStatus.setText(booksDetails.getmStatus());
-        holder.bookPrice.setText(booksDetails.getmPrice());
+        holder.bookPrice.setText("Rs "+booksDetails.getmPrice()+"/-");
         holder.bookDate.setText(booksDetails.getmDate());
-                holder.setItemClickListener(new ItemClickListener() {
+        holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick(View v, int pos) {
                 BooksDetails bd = mBooks.get(pos);
@@ -70,12 +71,12 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
         return mBooks.size();
     }
 
-    public  class BookViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public  class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView bookViewName, bookDate, bookPrice;
         public ImageView imageView;
         private ItemClickListener itemClickListener;
 
-        public BookViewHolder(View itemView) {
+        public ViewHolder(View itemView) {
             super(itemView);
             bookDate = itemView.findViewById(R.id.item_time);
             bookViewName = itemView.findViewById(R.id.item_bName);
@@ -83,6 +84,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
             bookPrice = itemView.findViewById(R.id.item_bPrice);
             itemView.setOnClickListener(this);
         }
+
 
         public void setItemClickListener(ItemClickListener ic)
         {
@@ -95,6 +97,7 @@ public class BooksAdapter extends RecyclerView.Adapter<BooksAdapter.BookViewHold
             this.itemClickListener.onItemClick(v,getLayoutPosition());
         }
     }
+
 
 
 }

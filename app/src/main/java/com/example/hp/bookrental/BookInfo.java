@@ -41,7 +41,7 @@ public class BookInfo extends AppCompatActivity {
         bk_Author.setText("BOOK AUTHOR - "+book_author);
         bk_Edition.setText("BOOK EDITION - "+book_Edition);
         bk_status.setText("BOOK STATUS - "+book_Status);
-        bk_Price.setText("BOOK PRICE - "+book_price);
+        bk_Price.setText("BOOK PRICE - Rs "+book_price+"/-");
          in = new Intent(getApplicationContext(),sellerDetails.class);
         in.putExtra("userID",book_uid);
 

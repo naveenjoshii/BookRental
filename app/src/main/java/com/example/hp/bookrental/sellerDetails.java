@@ -24,7 +24,7 @@ import java.util.List;
 public class sellerDetails extends AppCompatActivity {
     private TextView sPhone,sEmail;
     private String seller_phone,seller_mail;
-    private FloatingActionButton fab2,fab3;
+    private FloatingActionButton fab2,fab3,fab4;
     private DatabaseReference mDatabase;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,31 +34,33 @@ public class sellerDetails extends AppCompatActivity {
         sPhone = (TextView) findViewById(R.id.seller_phone);
         fab2 = (FloatingActionButton)findViewById(R.id.fab2);
         fab3 = (FloatingActionButton)findViewById(R.id.fab3);
+        fab4 = (FloatingActionButton)findViewById(R.id.fab4);
         sEmail = (TextView) findViewById(R.id.seller_mail);
         Intent in = getIntent();
         final String book_userId = in.getExtras().getString("userID").toString();
-        mDatabase.child(book_userId).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                 seller_mail = (String)dataSnapshot.child("u_mail").getValue();
-                 seller_phone = (String)dataSnapshot.child("u_phone").getValue();
-                sEmail.setText(seller_mail);
-                sPhone.setText(seller_phone);
-            }
+      mDatabase.child(book_userId).addValueEventListener(new ValueEventListener() {
+                                                             @Override
+                                                             public void onDataChange(DataSnapshot dataSnapshot) {
+                                                                 seller_mail = (String)dataSnapshot.child("u_mail").getValue();
+                                                                 seller_phone = (String)dataSnapshot.child("u_phone").getValue();
+                                                                 sEmail.setText(seller_mail);
+                                                                 sPhone.setText(seller_phone);
+                                                             }
 
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
+                                                             @Override
+                                                             public void onCancelled(DatabaseError databaseError) {
 
-            }
-        });
-        fab3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Uri call = Uri.parse("tel:" + seller_phone);
-                Intent surf = new Intent(Intent.ACTION_DIAL, call);
-                startActivity(surf);
-            }
-        });
+                                                             }
+                                                         });
+
+              fab3.setOnClickListener(new View.OnClickListener() {
+                  @Override
+                  public void onClick(View v) {
+                      Uri call = Uri.parse("tel:" + seller_phone);
+                      Intent surf = new Intent(Intent.ACTION_DIAL, call);
+                      startActivity(surf);
+                  }
+              });
         fab2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +69,18 @@ public class sellerDetails extends AppCompatActivity {
                 startActivity(Intent.createChooser(emailIntent, "Send Mail"));
             }
         });
+        fab4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent smsIntent = new Intent(Intent.ACTION_VIEW);
+                smsIntent.setType("vnd.android-dir/mms-sms");
+                smsIntent.putExtra("address", "" +seller_phone);
+                smsIntent.putExtra("sms_body"," I want to contact you about the Book posted in the BookRental App ThankYou");
+                startActivity(smsIntent);
+            }
+        });
+
+
 
     }
 

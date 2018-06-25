@@ -18,9 +18,9 @@ public class BooksDetails {
     public BooksDetails() {
     }
 
-    public BooksDetails(String mBookId,String mUserId,String mImageurl, String mBookName, String mAuthorName, String mEditionNo,String mStatus ,String mPrice,String mDate) {
-        if(mAuthorName.trim().equals("")){
-            mAuthorName="No Name";
+    public BooksDetails(String mBookId, String mUserId, String mImageurl, String mBookName, String mAuthorName, String mEditionNo, String mStatus, String mPrice, String mDate) {
+        if (mAuthorName.trim().equals("")) {
+            mAuthorName = "No Name";
         }
         this.mBookId = mBookId;
         this.mUserId = mUserId;
