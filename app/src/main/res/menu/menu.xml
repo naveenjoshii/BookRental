@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/action_search"
+        android:id="@+id/search"
         android:icon="@android:drawable/ic_menu_search"
         android:iconTint="@color/common_google_signin_btn_text_dark_focused"
         android:title="srch"
