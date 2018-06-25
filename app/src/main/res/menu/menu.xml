@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:iconTint="@color/common_google_signin_btn_text_dark_focused"
+        android:title="srch"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
     <item
         android:id="@+id/menuProfile"
-        android:title="Profile"/>
-
-    <item
-        android:id="@+id/menuSettings"
-        android:title="Settings" />
+        android:title="Profile"></item>
     <item
         android:id="@+id/menuFeedback"
         android:title="Feedback" />

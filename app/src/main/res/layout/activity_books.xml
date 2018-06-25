@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/backgroundimage"
     tools:context="com.example.hp.bookrental.BooksActivity">
+
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
@@ -42,4 +44,5 @@
         app:fabSize="normal"
         app:rippleColor="@color/white"
         app:srcCompat="@android:drawable/ic_input_add" />
+
 </RelativeLayout>

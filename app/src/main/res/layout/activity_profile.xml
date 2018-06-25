@@ -40,12 +40,13 @@
         android:text="Password :-"
         android:textColor="#000000"
         android:textSize="20dp" />
-    <EditText
-       android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+    <TextView
+        android:id="@+id/etPswd"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
         android:layout_margin="5dp"
         android:layout_marginTop="20dp"
-        android:id="@+id/etPswd"
         android:textColor="#000000"
         android:textSize="20dp" />
     <TextView
@@ -73,10 +74,10 @@
         android:textColor="#000000"
         android:textSize="20dp" />
 
-    <EditText
+    <TextView
         android:id="@+id/etpmail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_margin="5dp"
         android:layout_marginTop="20dp"
         android:textColor="#000000"
@@ -87,6 +88,11 @@
         android:layout_gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp" />
 
         <Button
             android:id="@+id/Save"
@@ -104,8 +110,8 @@
             android:id="@+id/cancel"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="5dp"
             android:layout_gravity="bottom"
+            android:layout_margin="5dp"
             android:background="@drawable/mybutton"
             android:fontFamily="@font/allerta_stencil"
             android:gravity="center"
