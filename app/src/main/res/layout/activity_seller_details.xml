@@ -45,7 +45,7 @@
         android:layout_alignParentTop="true"
         android:layout_marginEnd="3dp"
         android:clickable="true"
-        app:backgroundTint="@color/gold"
+        app:backgroundTint="?android:attr/colorPrimary"
         app:fabSize="mini"
         app:srcCompat="@android:drawable/ic_dialog_email" />
 
@@ -80,7 +80,7 @@
             android:layout_alignTop="@+id/seller_phone"
             android:layout_marginEnd="8dp"
             android:clickable="true"
-            app:backgroundTint="@color/gold"
+            app:backgroundTint="@color/colorPrimary"
             app:fabSize="mini"
             app:srcCompat="@android:drawable/stat_sys_phone_call" />
 
@@ -92,7 +92,7 @@
             android:layout_marginEnd="10dp"
             android:layout_toStartOf="@+id/fab3"
             android:clickable="true"
-            app:backgroundTint="@color/gold"
+            app:backgroundTint="?android:attr/colorPrimary"
             app:fabSize="mini"
             app:srcCompat="@android:drawable/stat_notify_chat" />
 

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backgroundimage"
+    android:background="#7c7575"
     tools:context="com.example.hp.bookrental.BooksActivity">
 
     <android.support.v7.widget.Toolbar
@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:background="@color/colorPrimaryDark" />
+        android:background="#be3030"
+        app:titleTextColor="@color/brown"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"
@@ -39,7 +40,7 @@
         android:layout_marginRight="30dp"
         android:clickable="true"
         android:src="@drawable/plus"
-        app:backgroundTint="@color/gold"
+        app:backgroundTint="#be3030"
         app:elevation="3dp"
         app:fabSize="normal"
         app:rippleColor="@color/white"

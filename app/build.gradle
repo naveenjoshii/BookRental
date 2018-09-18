@@ -34,6 +34,7 @@ dependencies {
     compile 'com.firebase:firebase-client-android:2.4.0'
     implementation 'com.google.firebase:firebase-auth:11.0.4'
     implementation 'com.google.firebase:firebase-database:11.0.4'
+    implementation 'com.google.android.gms:play-services-location:11.0.4'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.firebaseui:firebase-ui-database:2.3.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
@@ -43,6 +44,8 @@ dependencies {
     compile 'com.android.support:support-annotations:27.1.1'
 
 }
+
+
 
 
 

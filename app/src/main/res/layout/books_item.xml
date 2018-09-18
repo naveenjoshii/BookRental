@@ -20,13 +20,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="37dp"
                 android:layout_gravity="center"
                 android:orientation="horizontal"
                 android:padding="3dp">
@@ -34,8 +33,8 @@
                 <TextView
                     android:id="@+id/textView8"
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
                     android:text="Book Name:-"
                     android:textColor="#000000"
                     android:textSize="14dp" />
@@ -43,8 +42,8 @@
                 <TextView
                     android:id="@+id/item_bName"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
                     android:textColor="@color/colorAccent"
                     android:textSize="13dp" />
             </LinearLayout>
@@ -69,8 +68,8 @@
                 <TextView
                     android:id="@+id/item_bPrice"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
                     android:textColor="@color/colorAccent"
                     android:textSize="13dp" />
 
@@ -79,7 +78,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center"
                 android:layout_marginTop="3dp"
                 android:orientation="horizontal"
@@ -87,8 +86,8 @@
 
                 <TextView
                     android:layout_width="100dp"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
+                    android:layout_height="30dp"
+                    android:gravity="center|start"
                     android:text="Posted on:-"
                     android:textColor="#000000"
                     android:textSize="14dp" />
@@ -96,8 +95,8 @@
                 <TextView
                     android:id="@+id/item_time"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="start"
+                    android:layout_height="match_parent"
+                    android:gravity="center|start"
                     android:textColor="@color/colorAccent"
                     android:textSize="13dp" />
             </LinearLayout>
